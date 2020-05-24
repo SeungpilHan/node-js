@@ -5,3 +5,6 @@ app.listen(3000, function() {
 });
 
 console.log('end of server code...') 
+app.get('/', function(req,res) {
+  res.sendfile(__dirname + "/public/main.html")
+}) 
